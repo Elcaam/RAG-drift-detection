@@ -5,9 +5,7 @@
 
 A framework for detecting performance drift in RAG systems.
 
-##The Problem That Kept Me Up
-
-### The Silent Degradation Crisis
+### The Problem That Kept Me Up
 
 Imagine this scenario: You've built a brilliant RAG system that answers customer questions with 95% accuracy. It's working perfectly in production, and your users are happy. But then, slowly and silently, the knowledge base starts to change. New information gets added, old information becomes outdated, and some content gets corrupted. Your system's performance starts to slip: 90%, then 85%, then 75% accuracy. But you don't notice until it's too late, and your users are already complaining.
 
