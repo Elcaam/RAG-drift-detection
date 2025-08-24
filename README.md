@@ -206,9 +206,6 @@ The framework generates comprehensive visualizations that demonstrate drift dete
 ![Drift Heatmap](results/drift_demo_heatmap.png)
 *Drift severity heatmap showing the intensity of performance degradation across different metrics and time periods.*
 
-![Simple Example Metrics](results/simple_metrics.png)
-*Basic example showing metrics over time with drift detection.*
-
 ![Simple Example Heatmap](results/simple_heatmap.png)
 *Heatmap visualization for the simple example demonstrating drift patterns.*
 
