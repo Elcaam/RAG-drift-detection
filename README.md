@@ -202,11 +202,11 @@ T-tests provided additional validation:
 
 The framework generates comprehensive visualizations that demonstrate drift detection in action:
 
-![Performance Metrics](results/drift_demo_metrics.png)
-*Performance metrics tracking over time with drift detection alerts. Red markers indicate when significant degradation was detected.*
+**Performance Metrics**: The system tracks key metrics over time with drift detection alerts. Red markers indicate when significant degradation was detected.
 
-![Drift Heatmap](results/drift_demo_heatmap.png)
-*Drift severity heatmap showing the intensity of performance degradation across different metrics and time periods.*
+**Drift Heatmap**: A heatmap visualization shows the intensity of performance degradation across different metrics and time periods.
+
+*Note: Run the example scripts to generate these visualizations locally.*
 
 ### Key Discoveries
 
@@ -302,46 +302,6 @@ pip install -r requirements.txt
 - **Plotly**: Interactive dashboards and real-time monitoring
 - **BERTScore**: Semantic similarity evaluation
 
-##Configuration
-
-### Customizing Detection Sensitivity
-
-```python
-# Adjust detection thresholds for your use case
-drift_detector = DriftDetector(
-    baseline_metrics=baseline_metrics,
-    z_threshold=2.0,        # Z-score threshold (default: 2.0)
-    window_size=5,          # Trend analysis window (default: 5)
-    threshold_method="z_score"  # Detection method
-)
-
-# For more sensitive detection (higher false positive rate)
-sensitive_detector = DriftDetector(
-    baseline_metrics=baseline_metrics,
-    z_threshold=1.5,        # More sensitive
-    window_size=3,          # Shorter trend window
-)
-```
-
-### Customizing RAG Pipeline
-
-```python
-# Optimize for your specific use case
-pipeline = RAGPipeline(
-    embedding_model_name="all-MiniLM-L6-v2",  # Fast and effective
-    chunk_size=500,         # Document chunk size
-    chunk_overlap=50,       # Overlap between chunks
-    top_k=5                 # Number of retrieved documents
-)
-
-# For different embedding models
-pipeline_large = RAGPipeline(
-    embedding_model_name="all-mpnet-base-v2",  # Higher quality, slower
-    chunk_size=1000,        # Larger chunks
-    chunk_overlap=100,      # More overlap
-    top_k=10                # More retrieved documents
-)
-```
 
 See `requirements.txt` for complete dependency list.
 
