@@ -6,7 +6,7 @@
 
 ### The Problem That Kept Me Up
 
-Imagine this scenario: You've built a brilliant RAG system that answers customer questions with 95% accuracy. It's working perfectly in production, and your users are happy. But then, slowly and silently, the knowledge base starts to change. New information gets added, old information becomes outdated, and some content gets corrupted. Your system's performance starts to slip: 90%, then 85%, then 75% accuracy. But you don't notice until it's too late, and your users are already complaining.
+Imagine building a brilliant RAG system that answers customer questions with 95% accuracy. It's working perfectly in production, and your users are happy. But then, slowly and silently, the knowledge base starts to change. New information gets added, old information becomes outdated, and some content gets corrupted. Your system's performance starts to slip: 90%, then 85%, then 75% accuracy. But you don't notice until it's too late, and your users are already complaining.
 
 This is exactly the problem I set out to solve. As RAG systems become more common in production environments, keeping their knowledge bases accurate and reliable is absolutely critical. But what happens when the data they rely on changes silently over time? Traditional monitoring approaches are reactive at best; you only know there's a problem when users start complaining or when you manually run evaluations.
 
